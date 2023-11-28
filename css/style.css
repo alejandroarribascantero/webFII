@@ -1,0 +1,114 @@
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 18px;
+}
+
+#navbar {
+    transition: top 0.3s;
+}
+
+.navbar-hidden {
+    top: -100px !important;
+}
+
+.navbar-nav li {
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav li:hover {
+    background-color: #555;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-profile-container {
+    position: relative;
+}
+
+.nav-profile-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #212529;
+    padding: 8px;
+    display: none;
+}
+
+.nav-profile-container:hover .nav-profile-dropdown {
+    display: block;
+}
+
+.nav-profile-container:hover .nav-link {
+    color: #fff;
+}
+
+.nav-hidden {
+    display: none;
+}
+
+.nav-profile-dropdown li {
+    list-style: none;
+}
+
+.nav-profile-dropdown li a {
+    display: block;
+    padding: 5px 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-profile-dropdown li a:hover {
+    background-color: #555;
+}
+/*-------------------------------------------------------*/
+.hero {
+    margin-top: 3%;
+    background-size: cover;
+    background-position: center;
+    padding: 200px ;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.hero h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.hero .btn {
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+/* Estilos para el footer */
+/* Estilos para el footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 14px;
+}

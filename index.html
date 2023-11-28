@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web FII</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"/>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="publica/tema.html">Tema</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publica/sobreMi.html">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publica/red.html">Red</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-profile-container">
+                            <a class="nav-link" href="publica/fii.html">FII</a>
+                            <ul class="nav-profile-dropdown">
+                                <li>
+                                    <a class="nav-link nav-hidden" href="publica/subfii.html">SubFII</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- seccion para crear noticia -->
+    <section id="inicio" class="hero" style='background-image: url("publica/noticiaInicio.jpg");'>
+        <div class="container">
+            <button id="btnAbrirFormulario" class="btn btn-secondary">Abrir Formulario</button>
+        </div>
+    </section>
+    <!-- formulario para incluir una nueva noticia -->
+    <form id="noticiaForm" class="needs-validation" novalidate style="display: none;">
+        <div class="mb-3">
+            <label for="titulo" class="form-label">Título:</label>
+            <input type="text" class="form-control" id="titulo" name="titulo" required>
+            <div class="invalid-feedback">
+                Por favor, ingresa un título.
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="descripcion" class="form-label">Descripción:</label>
+            <textarea class="form-control" id="descripcion" name="descripcion" required></textarea>
+            <div class="invalid-feedback">
+                Por favor, ingresa una descripción.
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="autor" class="form-label">Autor:</label>
+            <input type="text" class="form-control" id="autor" name="autor" required>
+            <div class="invalid-feedback">
+                Por favor, ingresa el nombre del autor.
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+    
+    
+    <!-- footer -->
+    <footer class="footer bg-dark text-light">
+        <div class="container text-center">
+            <p>&copy; 2023 Noticiero - Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
