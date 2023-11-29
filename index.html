@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"/>
 </head>
 <body>
+    
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar">
         <div class="container">
@@ -40,38 +41,45 @@
             </div>
         </div>
     </nav>
+    <div id="overlay"></div>
     <!-- seccion para crear noticia -->
     <section id="inicio" class="hero" style='background-image: url("publica/noticiaInicio.jpg");'>
         <div class="container">
-            <button id="btnAbrirFormulario" class="btn btn-secondary">Abrir Formulario</button>
+            <button id="btnAbrirFormulario" class="btn btn-secondary">Crear Noticia</button>
         </div>
     </section>
     <!-- formulario para incluir una nueva noticia -->
-    <form id="noticiaForm" class="needs-validation" novalidate style="display: none;">
-        <div class="mb-3">
-            <label for="titulo" class="form-label">Título:</label>
-            <input type="text" class="form-control" id="titulo" name="titulo" required>
-            <div class="invalid-feedback">
-                Por favor, ingresa un título.
+    <form id="noticiaForm" class="needs-validation" novalidate>
+        <div class="form-container">
+            <button id="btnCerrarFormulario" class="btn btn-danger">Cerrar</button>
+            <div class="mb-3">
+                <label for="titulo" class="form-label">Título:</label>
+                <input type="text" class="form-control" id="titulo" name="titulo" required>
+                <div class="invalid-feedback">
+                    Por favor, ingresa un título.
+                </div>
             </div>
-        </div>
-        <div class="mb-3">
-            <label for="descripcion" class="form-label">Descripción:</label>
-            <textarea class="form-control" id="descripcion" name="descripcion" required></textarea>
-            <div class="invalid-feedback">
-                Por favor, ingresa una descripción.
+            <div class="mb-3">
+                <label for="descripcion" class="form-label">Descripción:</label>
+                <textarea class="form-control" id="descripcion" name="descripcion" required></textarea>
+                <div class="invalid-feedback">
+                    Por favor, ingresa una descripción.
+                </div>
             </div>
-        </div>
-        <div class="mb-3">
-            <label for="autor" class="form-label">Autor:</label>
-            <input type="text" class="form-control" id="autor" name="autor" required>
-            <div class="invalid-feedback">
-                Por favor, ingresa el nombre del autor.
+            <div class="mb-3">
+                <label for="autor" class="form-label">Autor:</label>
+                <input type="text" class="form-control" id="autor" name="autor" required>
+                <div class="invalid-feedback">
+                    Por favor, ingresa el nombre del autor.
+                </div>
             </div>
+            <button type="submit" class="btn btn-primary">Guardar</button>
         </div>
-        <button type="submit" class="btn btn-primary">Guardar</button>
     </form>
-    
+    <div class="container mt-3" id="noticiasContainer">
+        <div class="row" id="noticiasRow"></div>
+    </div>
+    <div id="detalleNoticiaContainer"></div>
     
     <!-- footer -->
     <footer class="footer bg-dark text-light">

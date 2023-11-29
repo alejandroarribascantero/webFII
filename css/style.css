@@ -101,7 +101,6 @@ html {
 }
 
 /* Estilos para el footer */
-/* Estilos para el footer */
 .footer {
     background-color: #333;
     color: #fff;
@@ -112,3 +111,95 @@ html {
 .footer p {
     font-size: 14px;
 }
+
+/* Estilo formulario */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.overlay-visible {
+    display: block;
+}
+
+/* Estilos para el formulario centrado */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+/* Estilos para el formulario centrado */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+#noticiaForm {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20; 
+}
+
+.form-container {
+    background-color: #fff; 
+    padding: 20px;
+    max-width: 90%; 
+    width: 600px;
+    position: relative;
+}
+
+#btnCerrarFormulario {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+#descripcion {
+    height: 150px; /* Ajusta la altura según tus necesidades */
+}
+/* notcia detallada */
+.detalle-noticia {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%; 
+    width: 600px;
+    z-index: 100; /* Asegura que esté por encima del overlay */
+}
+.detalle-noticia h5 {
+    font-size: 24px;
+}
+
+.detalle-noticia p {
+    font-size: 18px;
+}
+
+.detalle-noticia button {
+    margin-top: 10px;
+}
+
